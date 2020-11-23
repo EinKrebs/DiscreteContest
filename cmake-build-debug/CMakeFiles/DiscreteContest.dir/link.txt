@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/DiscreteContest.dir/A.cpp.o CMakeFiles/DiscreteContest.dir/B.cpp.o  -o DiscreteContest 
+/usr/bin/c++  -g   CMakeFiles/DiscreteContest.dir/A.cpp.o CMakeFiles/DiscreteContest.dir/B.cpp.o CMakeFiles/DiscreteContest.dir/C.cpp.o  -o DiscreteContest 

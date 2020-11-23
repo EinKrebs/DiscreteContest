@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/krebs/CLionProjects/DiscreteContest/A.cpp" "/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles/DiscreteContest.dir/A.cpp.o"
   "/home/krebs/CLionProjects/DiscreteContest/B.cpp" "/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles/DiscreteContest.dir/B.cpp.o"
+  "/home/krebs/CLionProjects/DiscreteContest/C.cpp" "/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles/DiscreteContest.dir/C.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

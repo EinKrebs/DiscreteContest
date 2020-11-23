@@ -49,45 +49,45 @@ vector<int> get_sorted_order(vector<vector<int>> &graph, vector<int> &power)
     return order;
 }
 
-//int main()
-//{
-//    ios::sync_with_stdio(false);
-//    cin.tie(nullptr);
-//    cout.tie(nullptr);
-//
-//    int n;
-//    cin >> n;
-//    vector<vector<int>> graph(n);
-//    vector<int> power(n);
-//    for (int i = 0; i < n; ++i)
-//    {
-//        int k;
-//        cin >> k;
-//        power[i] = k;
-//        for (int j = 0; j < k; ++j)
-//        {
-//            int incident;
-//            cin >> incident;
-//            incident--;
-//            graph[i].push_back(incident);
-//        }
-//    }
-//    vector<int> order = get_sorted_order(graph, power);
-//    vector<int> colors(n);
-//    for (auto vertex: order)
-//    {
-//        set<int> incident_colors;
-//        for (auto incident: graph[vertex])
-//        {
-//            incident_colors.insert(colors[incident]);
-//        }
-//        int color = 1;
-//        while(incident_colors.count(color) == 1)
-//            color++;
-//        colors[vertex] = color;
-//    }
-//
-//    for (auto color: colors)
-//        cout << color << "\n";
-//    return 0;
-//}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int n;
+    cin >> n;
+    vector<vector<int>> graph(n);
+    vector<int> power(n);
+    for (int i = 0; i < n; ++i)
+    {
+        int k;
+        cin >> k;
+        power[i] = k;
+        for (int j = 0; j < k; ++j)
+        {
+            int incident;
+            cin >> incident;
+            incident--;
+            graph[i].push_back(incident);
+        }
+    }
+    vector<int> order = get_sorted_order(graph, power);
+    vector<int> colors(n);
+    for (auto vertex: order)
+    {
+        set<int> incident_colors;
+        for (auto incident: graph[vertex])
+        {
+            incident_colors.insert(colors[incident]);
+        }
+        int color = 1;
+        while(incident_colors.count(color) == 1)
+            color++;
+        colors[vertex] = color;
+    }
+
+    for (auto color: colors)
+        cout << color << "\n";
+    return 0;
+}

@@ -88,6 +88,9 @@
 		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/B.cpp">
 			<Option target="DiscreteContest"/>
 		</Unit>
+		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/C.cpp">
+			<Option target="DiscreteContest"/>
+		</Unit>
 		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
