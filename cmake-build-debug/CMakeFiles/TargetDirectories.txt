@@ -1,0 +1,3 @@
+/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles/DiscreteContest.dir

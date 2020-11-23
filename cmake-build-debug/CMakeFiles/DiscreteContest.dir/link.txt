@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/DiscreteContest.dir/main.cpp.o  -o DiscreteContest 
