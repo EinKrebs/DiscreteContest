@@ -82,7 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/main.cpp">
+		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/A.cpp">
+			<Option target="DiscreteContest"/>
+		</Unit>
+		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/B.cpp">
 			<Option target="DiscreteContest"/>
 		</Unit>
 		<Unit filename="/home/krebs/CLionProjects/DiscreteContest/CMakeLists.txt">

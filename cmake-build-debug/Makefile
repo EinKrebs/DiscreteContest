@@ -143,32 +143,59 @@ DiscreteContest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/build
 .PHONY : DiscreteContest/fast
 
-main.o: main.cpp.o
+A.o: A.cpp.o
 
-.PHONY : main.o
+.PHONY : A.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/main.cpp.o
-.PHONY : main.cpp.o
+A.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/A.cpp.o
+.PHONY : A.cpp.o
 
-main.i: main.cpp.i
+A.i: A.cpp.i
 
-.PHONY : main.i
+.PHONY : A.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/main.cpp.i
-.PHONY : main.cpp.i
+A.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/A.cpp.i
+.PHONY : A.cpp.i
 
-main.s: main.cpp.s
+A.s: A.cpp.s
 
-.PHONY : main.s
+.PHONY : A.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/main.cpp.s
-.PHONY : main.cpp.s
+A.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/A.cpp.s
+.PHONY : A.cpp.s
+
+B.o: B.cpp.o
+
+.PHONY : B.o
+
+# target to build an object file
+B.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.o
+.PHONY : B.cpp.o
+
+B.i: B.cpp.i
+
+.PHONY : B.i
+
+# target to preprocess a source file
+B.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.i
+.PHONY : B.cpp.i
+
+B.s: B.cpp.s
+
+.PHONY : B.s
+
+# target to generate assembly for a file
+B.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.s
+.PHONY : B.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DiscreteContest"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... A.o"
+	@echo "... A.i"
+	@echo "... A.s"
+	@echo "... B.o"
+	@echo "... B.i"
+	@echo "... B.s"
 .PHONY : help
 
 
