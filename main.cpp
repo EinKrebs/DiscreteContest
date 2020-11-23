@@ -4,12 +4,24 @@ using namespace std;
 
 typedef long long ll;
 
+map<pair<int, int>, set<pair<int, int>>> incidents;
+set<pair<int, int>> visited;
+
+int dfs(pair<int, int> current)
+{
+    int vertex_count = 0;
+    visited.insert(current);
+    for (auto point: incidents[current])
+        if (visited.count(point) == 0)
+            vertex_count += dfs(point);
+    return vertex_count + incidents[current].size() % 2;
+}
+
 int main()
 {
     int n;
     cin >> n;
     vector<vector<pair<int, int>>> cuts(n);
-    set<pair<int, int>> even_vertices;
     for (int i = 0; i < n; ++i)
     {
         int k;
@@ -19,18 +31,27 @@ int main()
         {
             cin >> cuts[i][j].first >> cuts[i][j].second;
         }
-        if (!(cuts[i][0] == cuts[i][k - 1]))
+        for (int j = 0; j < k - 1; ++j)
         {
-            if(even_vertices.count(cuts[i][0]) == 1)
-                even_vertices.erase(cuts[i][0]);
-            else
-                even_vertices.insert(cuts[i][0]);
-            if(even_vertices.count(cuts[i][k - 1]) == 1)
-                even_vertices.erase(cuts[i][k - 1]);
-            else
-                even_vertices.insert(cuts[i][k - 1]);
+            incidents[cuts[i][j]].insert(cuts[i][j + 1]);
+            incidents[cuts[i][j + 1]].insert(cuts[i][j]);
         }
     }
-    cout << max(0LL, ll(even_vertices.size()) / 2 - 1);
+    int linked_count = 0;
+    int count = 0;
+    for (int i = 0; i < n; ++i)
+    {
+        int k = cuts[i].size();
+        for (int j = 0; j < k; ++j)
+        {
+            if (visited.count(cuts[i][j]) == 0)
+            {
+                linked_count++;
+                int inner_count = dfs(cuts[i][j]);
+                count += max(0, inner_count / 2 - 1);
+            }
+        }
+    }
+    cout << count + linked_count - 1;
     return 0;
 }
