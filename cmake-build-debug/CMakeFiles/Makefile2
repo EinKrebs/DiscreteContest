@@ -55,10 +55,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -94,12 +94,12 @@ clean: CMakeFiles/DiscreteContest.dir/clean
 CMakeFiles/DiscreteContest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target DiscreteContest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target DiscreteContest"
 .PHONY : CMakeFiles/DiscreteContest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DiscreteContest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DiscreteContest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krebs/CLionProjects/DiscreteContest/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DiscreteContest.dir/rule

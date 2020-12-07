@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/krebs/CLionProjects/DiscreteContest/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/137/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/137/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -170,60 +170,6 @@ A.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/A.cpp.s
 .PHONY : A.cpp.s
 
-B.o: B.cpp.o
-
-.PHONY : B.o
-
-# target to build an object file
-B.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.o
-.PHONY : B.cpp.o
-
-B.i: B.cpp.i
-
-.PHONY : B.i
-
-# target to preprocess a source file
-B.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.i
-.PHONY : B.cpp.i
-
-B.s: B.cpp.s
-
-.PHONY : B.s
-
-# target to generate assembly for a file
-B.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.s
-.PHONY : B.cpp.s
-
-C.o: C.cpp.o
-
-.PHONY : C.o
-
-# target to build an object file
-C.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/C.cpp.o
-.PHONY : C.cpp.o
-
-C.i: C.cpp.i
-
-.PHONY : C.i
-
-# target to preprocess a source file
-C.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/C.cpp.i
-.PHONY : C.cpp.i
-
-C.s: C.cpp.s
-
-.PHONY : C.s
-
-# target to generate assembly for a file
-C.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/C.cpp.s
-.PHONY : C.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,12 +182,6 @@ help:
 	@echo "... A.o"
 	@echo "... A.i"
 	@echo "... A.s"
-	@echo "... B.o"
-	@echo "... B.i"
-	@echo "... B.s"
-	@echo "... C.o"
-	@echo "... C.i"
-	@echo "... C.s"
 .PHONY : help
 
 
