@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DiscreteContest.dir/A.cpp.o"
-  "CMakeFiles/DiscreteContest.dir/B.cpp.o"
-  "CMakeFiles/DiscreteContest.dir/C.cpp.o"
   "DiscreteContest"
   "DiscreteContest.pdb"
 )
