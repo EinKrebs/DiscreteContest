@@ -170,6 +170,33 @@ A.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/A.cpp.s
 .PHONY : A.cpp.s
 
+B.o: B.cpp.o
+
+.PHONY : B.o
+
+# target to build an object file
+B.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.o
+.PHONY : B.cpp.o
+
+B.i: B.cpp.i
+
+.PHONY : B.i
+
+# target to preprocess a source file
+B.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.i
+.PHONY : B.cpp.i
+
+B.s: B.cpp.s
+
+.PHONY : B.s
+
+# target to generate assembly for a file
+B.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiscreteContest.dir/build.make CMakeFiles/DiscreteContest.dir/B.cpp.s
+.PHONY : B.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... A.o"
 	@echo "... A.i"
 	@echo "... A.s"
+	@echo "... B.o"
+	@echo "... B.i"
+	@echo "... B.s"
 .PHONY : help
 
 

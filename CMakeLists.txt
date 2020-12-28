@@ -3,4 +3,4 @@ project(DiscreteContest)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DiscreteContest A.cpp)
+add_executable(DiscreteContest A.cpp B.cpp)

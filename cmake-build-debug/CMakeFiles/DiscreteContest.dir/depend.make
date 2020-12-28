@@ -3,3 +3,5 @@
 
 CMakeFiles/DiscreteContest.dir/A.cpp.o: ../A.cpp
 
+CMakeFiles/DiscreteContest.dir/B.cpp.o: ../B.cpp
+
